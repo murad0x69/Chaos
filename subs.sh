@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Download and update domains
-#./chaospy.py --download-new
+./chaospy.py --download-new
 ./chaospy.py --download-rewards
 
 if ls | grep ".zip" &> /dev/null; then
