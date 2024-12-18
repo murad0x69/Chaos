@@ -6,7 +6,7 @@
 
 if ls | grep ".zip" &> /dev/null; then
 	unzip '*.zip' &> /dev/null
-	cat *.txt | anew  domains.txtls
+	cat *.txt | anew newdomains.md > domains.txtls
 	rm *.txt
 	################################################################################## Send new domains result to notify
 	echo "Hourly scan result $(date +%F-%T)"  | notify -silent -provider telegram
