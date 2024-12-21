@@ -6,7 +6,8 @@
 
 if ls | grep ".zip" &> /dev/null; then
 	unzip '*.zip' &> /dev/null
-	cat *.txt | anew newdomains.md > subs.txt | sed 's/\*.//g' >  domains.txtls
+	cat *.txt | anew newdomains.md > subs.txtls
+        cat subs.txtls | sed 's/\*.//g' >  domains.txtls
 	rm *.txt
         cat domains.txtls  | anew  newsubs.txtls
 	################################################################################## Send new domains result to notify
