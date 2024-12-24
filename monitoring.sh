@@ -19,7 +19,7 @@ if ls *.zip &> /dev/null; then
     
     # Clean up temporary files
     rm "$folder_name"/*.txt
-    
+    rm *.zip
     # Save new subs
     cat "$folder_name/domains.txtls" | anew "$folder_name/newsubs.txtls"
     
