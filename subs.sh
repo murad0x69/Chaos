@@ -55,7 +55,7 @@ rm "$folder_name/newurls.txtls"
 cat "$folder_name/live.txtls" | anew | sed '/^$/d' > "$folder_name/newurls.txtls"
 
 # Clean up the temporary live.txtls
-rm "$folder_name/live.txtls"
+rm "$folder_name"/live.txtls
 
     
     # Notify about live websites
