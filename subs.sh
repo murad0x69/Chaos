@@ -8,8 +8,8 @@ folder_name=$(date +"%d-%m-%Y")
 mkdir -p "$folder_name"
 
 # Download and update domains
-./chaospy.py --download-new
-./chaospy.py --download-rewards
+python chaospy.py --download-new
+python chaospy.py --download-rewards
 
 # Process ZIP files if they exist
 if ls *.zip &> /dev/null; then
